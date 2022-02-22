@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Search from './components/Search';
 import { useState } from 'react';
 
-const UNSPLASH_ACCESS_KEY = '';
+const UNSPLASH_ACCESS_KEY = 'f3BUEkG1XA-3zmhDx_owJH6U16eH3pXHEBrf8bFdcsg';
 
 const App = () => {
   const [word, setWord] = useState('');
@@ -18,9 +18,10 @@ const App = () => {
         console.log(data);
       })
       .catch((err) => console.log(err));
+      setWord('');
   };
 
-  console.log(process.env);
+  // console.log(process.env);
  
 
   return (
